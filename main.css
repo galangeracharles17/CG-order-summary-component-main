@@ -1,0 +1,164 @@
+:root {
+    /* PRIMARY COLORS */
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    /* NEUTRAL COLORS */
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --hover-purple: hsl(245, 83%, 68%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    background-image: url('./images/pattern-background-desktop.svg');
+    font-family: 'Red Hat Display', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--Very-pale-blue);
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-card {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 85vh;
+    text-align: center;
+    background-color: white;
+    border-radius: 16px;
+}
+
+.main-card__image {
+    background-image: url('./images/illustration-hero.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30%;
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+}
+
+.main-card__info {
+    padding: 0 32px 0px 32px;
+}
+
+.main-card__header {
+    font-weight: 900;
+    font-size: 28px;
+    color: var(--Dark-blue);
+    letter-spacing: 0.7px;
+    margin: 40px 0 16px 0;
+}
+
+.main-card__description {
+    color: var(--Desaturated-blue);
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.main-card__price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Very-pale-blue);
+    width: 80%;
+    margin: 0 auto;
+    padding: 16px 32px;
+    border-radius: 8px;
+}
+
+.main-card__left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+}
+
+.main-card__icon {
+    background-image: url('./images/icon-music.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+}
+
+.main-card__price h4 {
+    color: var(--Dark-blue);
+    font-weight: 900;
+}
+
+.main-card__price p {
+    color: var(--Desaturated-blue)
+}
+
+.main-card__price a {
+    color: var(--Bright-blue);
+    font-weight: 700;
+}
+
+.main-card__price a:hover,
+.main-card__price a:active {
+    color: var(--hover-purple);
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.main-card__button {
+    margin: 24px auto;
+    padding: 8px;
+    display: inline-block;
+    width: 80%;
+    background-color: var(--Bright-blue);
+    border-radius: 8px;
+    border: none;
+    font-weight: 900;
+    font-size: 16px;
+    color: white;
+    box-shadow: 0px 8px 20px 4px rgba(183, 193, 224, 0.8);
+}
+
+.main-card__button:hover,
+.main-card__button:active {
+    background-color: var(--hover-purple);
+    transition: 0.25s;
+}
+
+.main-card__button+a {
+    color: var(--Desaturated-blue);
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-decoration: none;
+}
+
+.main-card__button+a:hover,
+.main-card__button+a:active {
+    color: var(--Dark-blue);
+}
+
+@media (max-width:475px) {
+    body {
+        background-image: url('./images/pattern-background-mobile.svg');
+        background-size: contain;
+        width: 100%;
+    }
+    .main-card {
+        width: 90%;
+        height: 85vh;
+    }
+}
