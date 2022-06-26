@@ -37,7 +37,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 25%;
-    height: 85vh;
+    height: 75vh;
     text-align: center;
     background-color: white;
     border-radius: 16px;
@@ -79,7 +79,7 @@ body {
     background-color: var(--Very-pale-blue);
     width: 80%;
     margin: 0 auto;
-    padding: 16px 32px;
+    padding: 16px 16px;
     border-radius: 8px;
 }
 
@@ -100,7 +100,9 @@ body {
 
 .main-card__price h4 {
     color: var(--Dark-blue);
-    font-weight: 900;
+    font-weight: 800;
+    margin-bottom: 8px;
+    letter-spacing: -0.7px;
 }
 
 .main-card__price p {
@@ -151,15 +153,23 @@ body {
     color: var(--Dark-blue);
 }
 
-@media (max-width:475px) {
+@media (max-width:375px) {
     body {
         background-image: url('./images/pattern-background-mobile.svg');
         background-size: contain;
         width: 100%;
     }
+    
     .main-card {
-        width: 90%;
-        height: 85vh;
+        width: 90vw;
+        height: 80vh;
+    }
+
+    .main-card__button+a {
+        display: inline-block;
+        width: 35%;
+        margin: 0 auto;
+        margin-bottom: 40px;
     }
 
     .main-card__button+a:focus-visible {
