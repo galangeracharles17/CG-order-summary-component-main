@@ -161,4 +161,8 @@ body {
         width: 90%;
         height: 85vh;
     }
+
+    .main-card__button+a:focus-visible {
+        outline: none;
+    }
 }
