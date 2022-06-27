@@ -41,6 +41,7 @@ body {
     text-align: center;
     background-color: white;
     border-radius: 16px;
+    box-shadow: 0px 8px 8px 4px rgba(183, 193, 224, 0.4);
 }
 
 .main-card__image {
@@ -152,6 +153,17 @@ body {
 .main-card__button+a:active {
     color: var(--Dark-blue);
 }
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
 
 @media (max-width:375px) {
     body {
