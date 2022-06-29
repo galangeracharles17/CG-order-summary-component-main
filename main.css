@@ -168,7 +168,7 @@ body {
 @media (max-width:375px) {
     body {
         background-image: url('./images/pattern-background-mobile.svg');
-        background-size: contain;
+        background-size: cover;
         width: 100%;
     }
     
